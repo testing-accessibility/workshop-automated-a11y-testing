@@ -1,0 +1,9 @@
+{
+    "component": {
+        "componentFolder": "exercise2-cypress-components",
+        "testFiles": "**/*spec.{js,jsx,ts,tsx}"
+    },
+    "integrationFolder": "exercise3-cypress-integration",
+    "testFiles": "**/*.spec.{js,jsx,ts,tsx}",
+    "video": false
+}
