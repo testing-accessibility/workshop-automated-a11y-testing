@@ -1,0 +1,109 @@
+{
+    "megamenu-section1": {
+        "linkGroups": [{
+            "headerText": "Find Your Adventure",
+            "items": [{
+                "url": "/listings",
+                "name": "Find a camping spot"
+            }, {
+                "url": "/events",
+                "name": "Events"
+            }, {
+                "url": "/passes",
+                "name": "Passes"
+            }, {
+                "url": "/trip-ideas",
+                "name": "Trip Ideas"
+            }]
+        }, {
+            "headerText": "Trip Types",
+            "items": [{
+                "url": "/trip-ideas#tent-camping",
+                "name": "Tent camping"
+            }, {
+                "url": "/trip-ideas#yurt-camping",
+                "name": "Yurt camping"
+            }, {
+                "url": "/trip-ideas#van-camping",
+                "name": "Van camping"
+            }, {
+                "url": "/trip-ideas#luxury-camping",
+                "name": "Luxury camping"
+            }]
+        }], 
+        "imageLinkBlocks": [{
+            "linkText": "All sites",
+            "imgSrc": "driving-map.jpg",
+            "iconSrc": "icon-nav-map.svg",
+            "url": "/listings"
+        }, {
+            "linkText": "RV parks",
+            "imgSrc": "rv-parks.jpg",
+            "iconSrc": "icon-nav-location.svg",
+            "url": "#"
+        }]
+    },
+    "megamenu-section2": {
+        "linkGroups": [{
+            "headerText": "Trip Types",
+            "items": [{
+                "url": "/trip-ideas#tent-camping",
+                "name": "Tent camping"
+            }, {
+                "url": "/trip-ideas#yurt-camping",
+                "name": "Yurt camping"
+            }, {
+                "url": "/trip-ideas#van-camping",
+                "name": "Van camping"
+            }, {
+                "url": "/trip-ideas#luxury-camping",
+                "name": "Luxury camping"
+            }]
+        }, {
+            "headerText": "You don’t have to be alone",
+            "items": [{
+                "url": "/events",
+                "name": "Events"
+            }, {
+                "url": "#",
+                "name": "Local Communities"
+            }]
+        }]
+    },
+    "megamenu-section3": {
+        "linkGroups": [{
+            "headerText": "Adventure Ideas",
+            "items": [{
+                "url": "/adventures-hikes",
+                "name": "Hikes"
+            }, {
+                "url": "#",
+                "name": "Bike rides"
+            }, {
+                "url": "#",
+                "name": "Motorcycle rides"
+            }, {
+                "url": "#",
+                "name": "Horse areas"
+            }]
+        }, {
+            "headerText": "About Us",
+            "items": [{
+                "url": "/about",
+                "name": "About CampSpots"
+            }, {
+                "url": "/careers",
+                "name": "Careers"
+            }, {
+                "url": "#",
+                "name": "Accessibility"
+            }]
+        }, {
+            "headerText": "Contribute",
+            "items": [{
+                "url": "/submit-listing",
+                "name": "Submit Your Spot"
+            }]
+        }]
+    }
+}

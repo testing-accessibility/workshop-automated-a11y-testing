@@ -1,0 +1,11 @@
+{
+    "extends": "@parcel/config-default",
+    "transformers": {
+        "*.mp4": ["@parcel/transformer-raw"],
+        "*.{js,mjs,jsx,cjs,ts,tsx}": [
+        "@parcel/transformer-js",
+        "@parcel/transformer-react-refresh-wrap"
+        ]
+    },
+    "resolvers": ["@parcel/resolver-glob", "..."]
+}
