@@ -101,6 +101,8 @@ yarn start
 This should start the site for your browser at the address indicated in your Terminal:
 `http://localhost:1234`
 
+You can also view a deployed version: https://workshop-automated-a11y-testing.testingaccessibility.com/
+
 ## Working through the exercises
 
 In this workshop, we get more advanced with a React web application built out of the same monorepo. There are folders for each of the sections and the build will already be set up with the required tooling.
@@ -128,6 +130,10 @@ It’s intended to get your brain thinking about the right questions to ask as
 we go through the material together.
 
 Contributions of any kind are welcome!
+
+## Workshop Resources
+
+Links from this and all of the Testing Accessibility workshops have been compiled on a resources page: https://workshop-resources.testingaccessibility.com/#workshops-testing
 
 <!-- prettier-ignore-start -->
 <!-->
