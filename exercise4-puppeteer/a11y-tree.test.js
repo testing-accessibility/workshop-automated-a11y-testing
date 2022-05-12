@@ -20,7 +20,7 @@ describe('Accessibility Tree', () => {
             interestingOnly: true
         })
 
-        const assetFilePath = path.join(process.cwd(), 'workshop2-automated-testing', 'exercise4-puppeteer', 'a11y-tree.json')
+        const assetFilePath = path.join(process.cwd(), 'exercise4-puppeteer', 'a11y-tree.json')
 
         console.log(snapshot)
         fs.writeFile(
@@ -33,7 +33,7 @@ describe('Accessibility Tree', () => {
             expect(stat.isFile()).toBe(true)
         })
     })
-    it.only('should have accessible menu toggles', async () => {
+    xit('should have accessible menu toggles', async () => {
         const meganav = await page.$('#header-megamenu');
         const snapshot = await page.accessibility.snapshot({
             root: meganav

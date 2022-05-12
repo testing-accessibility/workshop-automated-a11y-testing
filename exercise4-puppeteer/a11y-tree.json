@@ -1,134 +1,130 @@
 {
-    "role": "RootWebArea",
-    "name": "CampSpots",
-    "children": [
-        {
-            "role": "generic",
-            "name": "",
-            "children": [
-                {
-                    "role": "generic",
-                    "name": "",
-                    "children": [
-                        {
-                            "role": "generic",
-                            "name": "",
-                            "children": [
-                                {
-                                    "role": "generic",
-                                    "name": "",
-                                    "children": [
-                                        {
-                                            "role": "link",
-                                            "name": "CampSpots",
-                                            "children": [
-                                                {
-                                                    "role": "img",
-                                                    "name": ""
-                                                },
-                                                {
-                                                    "role": "StaticText",
-                                                    "name": "CampSpots"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "role": "navigation",
-                                    "name": "",
-                                    "children": [
-                                        {
-                                            "role": "generic",
-                                            "name": "",
-                                            "children": [
-                                                {
-                                                    "role": "button",
-                                                    "name": "Plan Your Trip",
-                                                    "children": [
-                                                        {
-                                                            "role": "StaticText",
-                                                            "name": "Plan Your Trip"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "role": "generic",
-                                            "name": "",
-                                            "children": [
-                                                {
-                                                    "role": "button",
-                                                    "name": "Ways to Stay",
-                                                    "children": [
-                                                        {
-                                                            "role": "StaticText",
-                                                            "name": "Ways to Stay"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "role": "generic",
-                                            "name": "",
-                                            "children": [
-                                                {
-                                                    "role": "button",
-                                                    "name": "Resources",
-                                                    "children": [
-                                                        {
-                                                            "role": "StaticText",
-                                                            "name": "Resources"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "role": "generic",
-                                    "name": "",
-                                    "children": [
-                                        {
-                                            "role": "link",
-                                            "name": "Login",
-                                            "children": [
-                                                {
-                                                    "role": "StaticText",
-                                                    "name": "Login"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "role": "main",
-                    "name": ""
-                },
-                {
-                    "role": "generic",
-                    "name": "",
-                    "children": [
-                        {
-                            "role": "generic",
-                            "name": "",
-                            "children": [
-                                {
-                                    "role": "img",
-                                    "name": ""
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+     "role": "RootWebArea",
+     "name": "CampSpots",
+     "children": [
+          {
+               "role": "heading",
+               "name": "Camp Spots",
+               "level": 1
+          },
+          {
+               "role": "link",
+               "name": "CampSpots"
+          },
+          {
+               "role": "heading",
+               "name": "Plan Your Trip",
+               "level": 2
+          },
+          {
+               "role": "heading",
+               "name": "Ways to Stay",
+               "level": 2
+          },
+          {
+               "role": "heading",
+               "name": "Resources",
+               "level": 2
+          },
+          {
+               "role": "link",
+               "name": "Login"
+          },
+          {
+               "role": "generic",
+               "name": "Where to? Dates Rest and relaxation is a part of life We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being. At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future. By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life. Places to visit New York Texas Utah Oregon Alaska Hawaii Find your next adventure Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Know what to pack and what to leave at home Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arrange the best activities Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+               "children": [
+                    {
+                         "role": "StaticText",
+                         "name": "Where to?"
+                    },
+                    {
+                         "role": "textbox",
+                         "name": "Try Oregon, Colorado..."
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Dates"
+                    },
+                    {
+                         "role": "textbox",
+                         "name": "Enter dates"
+                    },
+                    {
+                         "role": "button",
+                         "name": ""
+                    },
+                    {
+                         "role": "heading",
+                         "name": "Rest and relaxation is a part of life",
+                         "level": 3
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being."
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future."
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life."
+                    },
+                    {
+                         "role": "heading",
+                         "name": "Places to visit",
+                         "level": 4
+                    },
+                    {
+                         "role": "link",
+                         "name": "New York"
+                    },
+                    {
+                         "role": "link",
+                         "name": "Texas"
+                    },
+                    {
+                         "role": "link",
+                         "name": "Utah"
+                    },
+                    {
+                         "role": "link",
+                         "name": "Oregon"
+                    },
+                    {
+                         "role": "link",
+                         "name": "Alaska"
+                    },
+                    {
+                         "role": "link",
+                         "name": "Hawaii"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Find your next adventure"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Know what to pack and what to leave at home"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Arrange the best activities"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    }
+               ]
+          }
+     ]
 }
