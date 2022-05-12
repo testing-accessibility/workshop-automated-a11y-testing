@@ -22,6 +22,7 @@ const MegaNavSection = React.forwardRef((props, ref) => {
             `}
         >
             <SubNavButton
+                aria-expanded={props.activeMenu === ref}
                 buttonName={props.buttonName}
                 className="megamenu-navitem header-main-item" 
                 idRef={props.id}

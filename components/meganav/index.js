@@ -47,10 +47,10 @@ const MegaNav = () => {
         >
             <MegaNavSection
                 activeMenu={activeMenu}
-                id="megamenu-section1"
                 buttonName="Plan Your Trip"
-                ref={menu1}
+                id="megamenu-section1"
                 onClick={() => { navItemClick(menu1) }}
+                ref={menu1}
             />
             <MegaNavSection
                 activeMenu={activeMenu}
