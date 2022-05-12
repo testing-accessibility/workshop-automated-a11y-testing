@@ -7,7 +7,7 @@ describe('Passes Page', () => {
     xit('should have no accessibility violations on load', () => {
         cy.checkA11y()
     })
-    it('should have an accessible payment dialog', () => {
+    xit('should have an accessible payment dialog', () => {
         cy.get('#btn-join-basic').focus().click()
 
         // focus is sent into dialog
