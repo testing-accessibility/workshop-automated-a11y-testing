@@ -14,7 +14,7 @@ const user = userEvent.setup()
 describe('IconButton', () =>{
     it('labels the button', () => {
         const textFixture = "Send it!"
-        const { getByLabelText } = render(<IconButton buttonName={textFixture} />)
+        const { getByLabelText } = render(<IconButton name={textFixture} />)
 
         const buttonText = getByLabelText(textFixture)
 
