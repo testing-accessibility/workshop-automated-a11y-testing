@@ -1,12 +1,12 @@
 import React from "react"
-import LoadedImageUrl from "../utils/loaded-image-url"
+import LoadedImageUrl from "/components/utils/loaded-image-url"
 
-import navMap from "data/nav-map.json"
-import * as imageMap from "../../images/meganav/*.{jpg,svg}"
+import navMap from "/data/nav-map.json"
+import * as imageMap from "../../../images/meganav/*.{jpg,svg}"
 
 import SubNavButton from './subnav-button'
-import SubNavLinkGroup from './subnav-link-group'
-import SubNavImageBlock from './subnav-image-block'
+import SubNavLinkGroup from '/components/meganav/subnav-link-group'
+import SubNavImageBlock from '/components/meganav/subnav-image-block'
 
 const MegaNavSection = React.forwardRef((props, ref) => {
     const linkGroups = navMap[props.id].linkGroups
@@ -22,6 +22,7 @@ const MegaNavSection = React.forwardRef((props, ref) => {
             `}
         >
             <SubNavButton
+                aria-expanded={props.activeMenu === ref}
                 buttonName={props.buttonName}
                 className="megamenu-navitem header-main-item" 
                 idRef={props.id}
