@@ -4,6 +4,18 @@ Sometimes you need to throw another tool at the job to test for accessibility, a
 
 To start Puppeteer via Jest-Puppeteer, run this command:
 
-```
+```shell
 yarn test:puppeteer
+```
+
+You can also run the tests in watch mode:
+
+```shell
+yarn test:puppeteer --watch
+```
+
+To update a Puppeteer snapshot in watch mode, press:
+
+```shell
+u
 ```

@@ -46,6 +46,9 @@ const PassesPage = () => {
 
     const Dialog = () => (
         <>
+            <Helmet>
+                <title>CampSpots Passes</title>
+            </Helmet>
             <div
                 aria-label="Subscription details"
                 className={`payment-modal ${currentDialog}`}

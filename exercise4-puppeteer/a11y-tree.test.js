@@ -8,11 +8,11 @@ import fs from 'fs'
 
 describe('Accessibility Tree', () => {
     beforeAll(async () => {
-        await page.goto('http://localhost:1234')
+        await page.goto('http://localhost:1234/passes')
     })
 
-    it('should display "CampSpots" text on page', async () => {
-        await expect(page).toMatch('CampSpots')
+    it('should display heading text on page', async () => {
+        await expect(page).toMatch('Pick a Plan and Start Your Adventure Today!')
     })
 
     it('should create a snapshot file for the accessibility tree', async() => {
@@ -22,7 +22,7 @@ describe('Accessibility Tree', () => {
 
         const assetFilePath = path.join(process.cwd(), 'exercise4-puppeteer', 'a11y-tree.json')
 
-        console.log(snapshot)
+        // console.log(snapshot)
         fs.writeFile(
             assetFilePath,
             JSON.stringify(snapshot, null, 5), 
@@ -33,15 +33,9 @@ describe('Accessibility Tree', () => {
             expect(stat.isFile()).toBe(true)
         })
     })
-    xit('should have accessible menu toggles', async () => {
-        const meganav = await page.$('#header-megamenu');
-        const snapshot = await page.accessibility.snapshot({
-            root: meganav
-        })
-        console.log(await snapshot)
 
-        // expect(snapshot.children[1].role).toBe('button')
-        // expect(snapshot.children[1].name).toBe('Plan Your Trip')
-
+    it(`has the correct axTree`, async () => {
+        const axTree = await page.accessibility.snapshot({ page })
+        expect(axTree).toMatchSnapshot()
     })
 })

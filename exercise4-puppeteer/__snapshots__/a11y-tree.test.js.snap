@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accessibility Tree has the correct axTree 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "level": 1,
+      "name": "CampSpots",
+      "role": "heading",
+    },
+    Object {
+      "name": "CampSpots",
+      "role": "link",
+    },
+    Object {
+      "level": 2,
+      "name": "Plan Your Trip",
+      "role": "heading",
+    },
+    Object {
+      "level": 2,
+      "name": "Ways to Stay",
+      "role": "heading",
+    },
+    Object {
+      "level": 2,
+      "name": "Resources",
+      "role": "heading",
+    },
+    Object {
+      "name": "Login",
+      "role": "link",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "level": 2,
+          "name": "Pick a Plan and Start Your Adventure Today!",
+          "role": "heading",
+        },
+        Object {
+          "level": 3,
+          "name": "CampSpots Basic",
+          "role": "heading",
+        },
+        Object {
+          "level": 4,
+          "name": "$99/year",
+          "role": "heading",
+        },
+        Object {
+          "name": "Renewed annually",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "Unlimited overnight stays with No Camping Fees",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "100% money back guarantee",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "Access to spa facilities & restaurants",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "Join Now",
+          "role": "button",
+        },
+        Object {
+          "name": "Vitae maximus turpis tempor",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "nec",
+          "role": "StaticText",
+        },
+        Object {
+          "name": ".",
+          "role": "StaticText",
+        },
+        Object {
+          "level": 3,
+          "name": "CampSpots Pro",
+          "role": "heading",
+        },
+        Object {
+          "level": 4,
+          "name": "$139/year",
+          "role": "heading",
+        },
+        Object {
+          "name": "Renewed annually",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "Unlimited overnight stays with No Camping Fees",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "100% money back guarantee",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "Access to spa facilities & restaurants",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "Join Now",
+          "role": "button",
+        },
+        Object {
+          "name": "Lorem ipsum dolor",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "sit",
+          "role": "StaticText",
+        },
+        Object {
+          "name": "amet, consectetur adipiscing elit.",
+          "role": "StaticText",
+        },
+      ],
+      "name": "Pick a Plan and Start Your Adventure Today!",
+      "role": "generic",
+    },
+  ],
+  "name": "CampSpots",
+  "role": "RootWebArea",
+}
+`;

@@ -1,10 +1,10 @@
 {
      "role": "RootWebArea",
-     "name": "CampSpots",
+     "name": "CampSpots Passes",
      "children": [
           {
                "role": "heading",
-               "name": "Camp Spots",
+               "name": "CampSpots",
                "level": 1
           },
           {
@@ -32,97 +32,96 @@
           },
           {
                "role": "generic",
-               "name": "Where to? Dates Rest and relaxation is a part of life We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being. At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future. By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life. Places to visit New York Texas Utah Oregon Alaska Hawaii Find your next adventure Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Know what to pack and what to leave at home Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arrange the best activities Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+               "name": "Pick a Plan and Start Your Adventure Today!",
                "children": [
                     {
-                         "role": "StaticText",
-                         "name": "Where to?"
-                    },
-                    {
-                         "role": "textbox",
-                         "name": "Try Oregon, Colorado..."
-                    },
-                    {
-                         "role": "StaticText",
-                         "name": "Dates"
-                    },
-                    {
-                         "role": "textbox",
-                         "name": "Enter dates"
-                    },
-                    {
-                         "role": "button",
-                         "name": ""
+                         "role": "heading",
+                         "name": "Pick a Plan and Start Your Adventure Today!",
+                         "level": 2
                     },
                     {
                          "role": "heading",
-                         "name": "Rest and relaxation is a part of life",
+                         "name": "CampSpots Basic",
                          "level": 3
                     },
                     {
-                         "role": "StaticText",
-                         "name": "We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being."
-                    },
-                    {
-                         "role": "StaticText",
-                         "name": "At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future."
-                    },
-                    {
-                         "role": "StaticText",
-                         "name": "By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life."
-                    },
-                    {
                          "role": "heading",
-                         "name": "Places to visit",
+                         "name": "$99/year",
                          "level": 4
                     },
                     {
-                         "role": "link",
-                         "name": "New York"
-                    },
-                    {
-                         "role": "link",
-                         "name": "Texas"
-                    },
-                    {
-                         "role": "link",
-                         "name": "Utah"
-                    },
-                    {
-                         "role": "link",
-                         "name": "Oregon"
-                    },
-                    {
-                         "role": "link",
-                         "name": "Alaska"
-                    },
-                    {
-                         "role": "link",
-                         "name": "Hawaii"
+                         "role": "StaticText",
+                         "name": "Renewed annually"
                     },
                     {
                          "role": "StaticText",
-                         "name": "Find your next adventure"
+                         "name": "Unlimited overnight stays with No Camping Fees"
                     },
                     {
                          "role": "StaticText",
-                         "name": "Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         "name": "100% money back guarantee"
                     },
                     {
                          "role": "StaticText",
-                         "name": "Know what to pack and what to leave at home"
+                         "name": "Access to spa facilities & restaurants"
+                    },
+                    {
+                         "role": "button",
+                         "name": "Join Now"
                     },
                     {
                          "role": "StaticText",
-                         "name": "Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         "name": "Vitae maximus turpis tempor"
                     },
                     {
                          "role": "StaticText",
-                         "name": "Arrange the best activities"
+                         "name": "nec"
                     },
                     {
                          "role": "StaticText",
-                         "name": "Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         "name": "."
+                    },
+                    {
+                         "role": "heading",
+                         "name": "CampSpots Pro",
+                         "level": 3
+                    },
+                    {
+                         "role": "heading",
+                         "name": "$139/year",
+                         "level": 4
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Renewed annually"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Unlimited overnight stays with No Camping Fees"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "100% money back guarantee"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Access to spa facilities & restaurants"
+                    },
+                    {
+                         "role": "button",
+                         "name": "Join Now"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "Lorem ipsum dolor"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "sit"
+                    },
+                    {
+                         "role": "StaticText",
+                         "name": "amet, consectetur adipiscing elit."
                     }
                ]
           }
