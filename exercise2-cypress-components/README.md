@@ -18,3 +18,6 @@ Using a mounted component in Cypress, write tests that assert the following beha
 - Activating the menu via click
 - Asserting focus doesn’t go to items in the closed menu
 - Asserting focus does go to items in the open menu
+
+Your tests should go into `exercise2-cypress-components/meganav.test.js`. You
+can also peek at the tests written in the answers directory!
