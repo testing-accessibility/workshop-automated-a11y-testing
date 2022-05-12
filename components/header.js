@@ -4,9 +4,9 @@ import "./styles/header.scss"
 import CampSpotsLogo from "images/icons/camp-spots-logo.svg"
 import MegaNav from "./meganav/"
 
-const Header = () => {
+const Header = ({inert}) => {
     return (
-        <div id="header">
+        <div id="header" inert={inert}>
             <div id="header-nav">
                 <div id="header-logo">
                     <a href="/" className="header-main-item">

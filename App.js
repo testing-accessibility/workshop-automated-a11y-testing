@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+import AppContext from './components/AppContext'
 import { Router } from "@reach/router"
 import "./global-styles/variables.scss"
 import "./global-styles/styles.scss"
@@ -17,9 +18,16 @@ import HikesPage from "components/page-adventures-hikes"
 import imgFooterLogo from "images/icons/footer-logo.svg"
 
 export function App() {
-	return <>
-		<Header />
-		<div id="main">
+	const [inertMarkupValue, setInertMarkupValue] = useState(false)
+	
+	const context = {
+		inert: inertMarkupValue,
+		setInertMarkupValue
+	}
+
+	return <AppContext.Provider value={context}>
+		<Header inert={inertMarkupValue ? 'inert' : null} />
+		<div id="main" inert={inertMarkupValue ? 'inert' : null}>
 			<Router>
 				<HomePage path="/" />
 				<AboutPage path="/about" />
@@ -40,5 +48,6 @@ export function App() {
 				</div>
 			</div>
 		</div>
-	</>
+	</AppContext.Provider>
 }
+

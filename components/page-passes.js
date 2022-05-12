@@ -1,30 +1,96 @@
-import React, { useRef, useState } from "react"
+import React, { useContext, useEffect, useRef, useState } from "react"
 import BodyClassName from "react-body-classname"
 import {Helmet} from "react-helmet"
 
+import AppContext from './AppContext'
 import HeaderPortal from "components/header-portal"
 import "components/styles/page-passes.scss"
 import PaymentForm from "components/payment-form/payment-form"
 import iconProPlan from "images/icons/icon-proplan.svg"
 
 const PassesPage = () => {
+    const appContext = useContext(AppContext)
+
+    const dialogRef = useRef(null)
     const closeBtnRef = useRef(null)
+    const basicDialogTriggerBtnRef = useRef(null)
+    const proDialogTriggerBtnRef = useRef(null)
 
     const [dialogActive, setDialogState] = useState(false)
-    let [currentDialog, setCurrentDialog] = useState('')
+    const [currentDialog, setCurrentDialog] = useState('')
+    const [activeTriggerBtn, setActiveTriggerBtn] = useState(null)
 
-    const btnCloseClick = () => {
+    const handleDialogClose = () => {
         setDialogState(false)
+
+        appContext.setInertMarkupValue(false)
     }
-    const openDialog = (dialogName) => {
+    const handleDialogEscape = (event) => {
+        if (event.key === 'Escape') {
+            setDialogState(false)
+        }
+    }
+    const openDialog = (dialogName, btnRef) => {
         setCurrentDialog(dialogName)
         setDialogState(true)
+
+        appContext.setInertMarkupValue(true)
+        
+        setActiveTriggerBtn(btnRef)
     }
+    useEffect(() => {
+        if (dialogActive) {
+            dialogRef.current.focus()
+        } else {
+            // send focus back to triggering button
+            if (activeTriggerBtn && activeTriggerBtn.current) {
+                activeTriggerBtn.current.focus()
+            }
+        }
+    },[dialogActive, activeTriggerBtn])
+
+    const Dialog = () => (
+        <>
+            <div
+                aria-label="Subscription details"
+                className={`payment-modal ${currentDialog}`}
+                role="dialog"
+                hidden={dialogActive ? null : 'hidden'}
+                onKeyUp={(event)=> handleDialogEscape(event)}
+                ref={dialogRef}
+                tabIndex="-1"
+            >
+                <header>
+                    <button
+                        className="btn-close-dialog"
+                        onClick={handleDialogClose}
+                        ref={closeBtnRef}
+                    >
+                        X
+                    </button>
+                    <img src={iconProPlan} alt="" />
+                    <div id="header-basic">
+                        <h2>CampSpots<span>Basic</span></h2>
+                        <h3>$99/year</h3>
+                    </div>
+                    <div id="header-pro">
+                        <h2>CampSpots<span>Pro</span></h2>
+                        <h3>$139/year</h3>
+                    </div>
+                </header>
+                <section className="payment-form">
+                    <PaymentForm  />
+                </section>
+            </div>
+            <div className="modal-curtain" hidden={dialogActive ? null : 'hidden'}></div>
+        </>
+    )
     return (
         <BodyClassName className="page-plans">
             <>
                 <HeaderPortal>
                     <h1 className="visually-hidden">CampSpots</h1>
+                    <Dialog />
                 </HeaderPortal>
                 <section className="layout-centered">
                     <header className="page-header">
@@ -56,7 +122,8 @@ const PassesPage = () => {
                                     </ul>
                                     <button
                                         id="btn-join-basic"
-                                        onClick={()=> { openDialog('basic') }}
+                                        onClick={() => { openDialog('basic', basicDialogTriggerBtnRef) }}
+                                        ref={basicDialogTriggerBtnRef}
                                     >
                                         Join Now
                                     </button>
@@ -85,7 +152,8 @@ const PassesPage = () => {
                                     </ul>
                                     <button
                                         id="btn-join-pro"
-                                        onClick={()=> { openDialog('pro') }}
+                                        onClick={() => { openDialog('pro', proDialogTriggerBtnRef) }}
+                                        ref={proDialogTriggerBtnRef}
                                     >
                                         Join Now
                                     </button>
@@ -95,34 +163,6 @@ const PassesPage = () => {
                         </ul>
                     </article>
                 </section>
-                <div
-                    className={`payment-modal ${currentDialog}`}
-                    role="dialog"
-                    hidden={dialogActive ? null : 'hidden'}
-                >
-                    <header>
-                        <button
-                            className="btn-close-dialog"
-                            onClick={btnCloseClick}
-                            ref={closeBtnRef}
-                        >
-                            X
-                        </button>
-                        <img src={iconProPlan} alt="" />
-                        <div id="header-basic">
-                            <h2>CampSpots<span>Basic</span></h2>
-                            <h3>$99/year</h3>
-                        </div>
-                        <div id="header-pro">
-                            <h2>CampSpots<span>Pro</span></h2>
-                            <h3>$139/year</h3>
-                        </div>
-                    </header>
-                    <section className="payment-form">
-                        <PaymentForm  />
-                    </section>
-                </div>
-                <div className="modal-curtain" hidden={dialogActive ? null : 'hidden'}></div>
             </>
         </BodyClassName>
     )
