@@ -16,18 +16,17 @@ yarn test --watch
 
 _Note: To exit the process on MacOS, type `Control + C` in your Terminal._
 
-## Exercise: Write unit tests for the ButtonSubmit component
+## Exercise: Write unit tests for the IconButton component
 
 There’s an inaccessible button on the loose! Fix it with a bit of TDD (Test Driven
-Development). For the `ButtonSubmit` component, write Jest unit tests to assert
+Development). For the `IconButton` component, write Jest unit tests to assert
 it has an accessible name and it can be reached and operated with the keyboard.
 You will need to make changes to the component to make it pass, as well.
 
 API commands you can use:
 
 - [Testing Library/React: `render`](https://testing-library.com/docs/react-testing-library/api/#render) and [`screen`](https://testing-library.com/docs/queries/about#screen)
-- [Testing Library: `FireEvent`](https://testing-library.com/docs/dom-testing-library/api-events)
+- [Testing Library: `user-event`](https://testing-library.com/docs/user-event/intro)
 - [Testing Library: `getByRole`](https://testing-library.com/docs/queries/byrole)
 - [Testing Library: `getByLabelText`](https://testing-library.com/docs/queries/bylabeltext)
-- [Ecosystem/UserEvent](https://testing-library.com/docs/ecosystem-user-event)
 - [Jest-DOM matchers](https://github.com/testing-library/jest-dom)

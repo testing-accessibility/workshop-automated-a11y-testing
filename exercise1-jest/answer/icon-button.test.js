@@ -6,31 +6,35 @@
  import '@testing-library/jest-dom'
  import userEvent from '@testing-library/user-event'
  
- import ButtonSubmit  from '../../components/button-submit'
+ import IconButton  from './icon-button'
 
- xdescribe('ButtonSubmit', () => {
+ const user = userEvent.setup()
+
+ describe('IconButton', () => {
     it('labels the dropdown button', () => {
         const textFixture = "Send it!"
-        const { getByLabelText } = render(<ButtonSubmit buttonName={textFixture} />)
+        const { getByLabelText } = render(<IconButton name={textFixture} />)
  
         const buttonText = getByLabelText(textFixture)
  
         expect(buttonText).toBeInTheDocument()
     })
     it('can be reached with the keyboard', () => {
-        render(<ButtonSubmit buttonName="Chuck it" />)
+        render(<IconButton name="Chuck it" />)
         const button = screen.getByTestId('btn-submit')
 
-        userEvent.tab()
+        user.tab()
+
         expect(button).toHaveFocus()
     })
-    it('can be operated with the keyboard and assistive tech', () => {
+    it('can be operated with the keyboard and assistive tech', async () => {
         let clicked = false
-        render(<ButtonSubmit buttonName="Fling it" onClick={()=> { clicked = true }} />)
+        render(<IconButton name="Fling it" onClick={()=> { clicked = true }} />)
         
         const button = screen.getByRole('button')
 
-        userEvent.click(button)
+        button.focus()
+        await user.keyboard('[Enter]')
 
         expect(clicked).toBe(true)
     })

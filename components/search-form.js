@@ -1,6 +1,6 @@
 import React from "react"
 
-import ButtonSubmit from "components/button-submit"
+import IconButton from "components/icon-button"
 
 const SearchForm = () => (
     <div className="main-search form-wrap layout">
@@ -19,7 +19,7 @@ const SearchForm = () => (
             </div>
         </div>
         <div className="form-field form-submit">
-            <ButtonSubmit onClick={()=> { console.log('Submit my stuff!') }} />
+            <IconButton onClick={()=> { console.log('Submit my stuff!') }} />
         </div>
     </div>
 )

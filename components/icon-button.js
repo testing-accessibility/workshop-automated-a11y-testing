@@ -1,9 +1,9 @@
 import React from "react"
 
-const ButtonSubmit = ({buttonName, onClick}) => {
+const IconButton = ({name, onClick}) => {
     return (
         <button
-            aria-label={buttonName}
+            aria-label={name}
             className="btn-submit btn-lookingglass"
             data-testid="btn-submit"
             onClick={(event) => { onClick(event)}}
@@ -13,4 +13,4 @@ const ButtonSubmit = ({buttonName, onClick}) => {
     )
 }
 
-export default ButtonSubmit
+export default IconButton
