@@ -32,10 +32,10 @@ const HikesPage = () => {
                 <HeaderPortal>
                     <h1 className="visually-hidden">CampSpots</h1>
                 </HeaderPortal>
-                <section aria-labelledby="heading-about-1">
+                <section aria-labelledby="heading-1">
                     <header className="page-header">
                         <div className="page-header-content layout">
-                            <h2 className="primary-heading h1-style" id="heading-about-1">Adventure Ideas: Hikes</h2>
+                            <h2 className="primary-heading h1-style" id="heading-1">Adventure Ideas: Hikes</h2>
                         </div>
                     </header>
                     <article className="layout">

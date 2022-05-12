@@ -13,3 +13,11 @@
         margin-bottom: 1em;
     }
 }
+
+/* Allow fixed full-screen mode to lay over other content */
+.page-adventure-ideas #header {
+    z-index: initial;
+}
+.page-adventure-ideas #main {
+    z-index: initial;
+}
