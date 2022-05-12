@@ -1,16 +1,20 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import "./styles/header.scss"
 
 import CampSpotsLogo from "images/icons/camp-spots-logo.svg"
 import MegaNav from "./meganav/"
 
-const Header = () => {
+const Header = ({inert}) => {
+    const [currentPathname, setCurrentPathname] = useState(null)
+    useEffect(() => {
+        setCurrentPathname(document.location.pathname)
+    },[])
     return (
-        <header id="header">
+        <header id="header" inert={inert}>
             <div id="header-nav">
                 <div id="header-logo">
                     <h1>
-                        <a href="/" className="header-main-item" data-testid="logo-link">
+                        <a aria-current={currentPathname === '/' ? 'page' : null} href="/" className="header-main-item" data-testid="logo-link">
                             <span className="logo-img">
                                 <img src={CampSpotsLogo} alt="" />
                             </span>

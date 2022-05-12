@@ -25,6 +25,12 @@ const PassesPage = () => {
 
         appContext.setInertMarkupValue(false)
     }
+    const handleDialogEscape = (event) => {
+        if (event.key === 'Escape') {
+            setDialogState(false)
+            appContext.setInertMarkupValue(false)
+        }
+    }
     const openDialog = (dialogName, btnRef) => {
         setCurrentDialog(dialogName)
         setDialogState(true)
@@ -52,11 +58,13 @@ const PassesPage = () => {
                 data-testid="payment-dialog"
                 role="dialog"
                 hidden={dialogActive ? null : 'hidden'}
+                onKeyUp={(event)=> handleDialogEscape(event)}
                 ref={dialogRef}
                 tabIndex="-1"
             >
                 <header>
                     <button
+                        aria-label="Close dialog"
                         className="btn-close-dialog"
                         data-testid="btn-close-dialog"
                         onClick={handleDialogClose}

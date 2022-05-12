@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import AppContext from './components/AppContext'
+import "wicg-inert"
+import AppContext from "./components/AppContext"
 import { Router } from "@reach/router"
 import "./global-styles/variables.scss"
 import "./global-styles/styles.scss"
@@ -41,7 +42,7 @@ export function App() {
 				<TripIdeasPage path="/trip-ideas" />
 			</Router>
 		</div>
-		<div id="footer">
+		<div id="footer" inert={inertMarkupValue ? 'inert' : null}>
 			<div className="layout">
 				<div id="footer-logo">
 					<img src={imgFooterLogo} />

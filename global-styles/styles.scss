@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+#portal-root {
+    position: relative;
+    z-index: 2;
+}
 .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
