@@ -22,5 +22,7 @@
         const {getByRole} = render(<Icon name="wifi" />)
 
         const icon = getByRole('img')
+
+        expect(icon).toBeInTheDocument()
      })
 })
