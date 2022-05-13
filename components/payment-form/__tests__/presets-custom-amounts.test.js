@@ -10,7 +10,7 @@ import PresetsCustomAmounts from '../presets-custom-amounts'
 
 const user = userEvent.setup()
  
-fdescribe('Preset amount radio buttons', () => {
+describe('Preset amount radio buttons', () => {
     it('acts as one tab stop',  async () => {
         render(
             <form>
