@@ -19,7 +19,7 @@ const SubNavButton = React.forwardRef((props, ref) => (
 
 SubNavButton.propTypes = {
     props: {
-        'aria-expanded': PropTypes.boolean,
+        'aria-expanded': PropTypes.bool,
         buttonName: PropTypes.string,
         idRef: PropTypes.string,
         onClick: PropTypes.func.isRequired

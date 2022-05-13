@@ -54,17 +54,17 @@ const MegaNav = () => {
             />
             <MegaNavSection
                 activeMenu={activeMenu}
-                id="megamenu-section2"
                 buttonName="Ways to Stay"
-                ref={menu2}
+                id="megamenu-section2"
                 onClick={() => { navItemClick(menu2) }}
+                ref={menu2}
             />
             <MegaNavSection
                 activeMenu={activeMenu}
-                id="megamenu-section3"
                 buttonName="Resources"
-                ref={menu3}
+                id="megamenu-section3"
                 onClick={() => { navItemClick(menu3) }}
+                ref={menu3}
             />
         </nav>
     )
