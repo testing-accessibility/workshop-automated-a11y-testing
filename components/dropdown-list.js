@@ -47,6 +47,7 @@ const DropdownList = ({defaultItemText = '', items = []}) => {
 }
 
 DropdownList.propTypes = {
+    defaultItemText: PropTypes.string,
     items: PropTypes.array
 }
 export default DropdownList
