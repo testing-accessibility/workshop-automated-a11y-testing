@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const SubNavButton = React.forwardRef((props, ref) => (
     <h2>
-        <div
+        <button
             className="megamenu-navitem header-main-item" 
             id={props.idRef}
             data-testid={props.idRef}
@@ -11,7 +11,7 @@ const SubNavButton = React.forwardRef((props, ref) => (
             ref={ref}
         >
             {props.buttonName}
-        </div>
+        </button>
     </h2>
 ))
 
