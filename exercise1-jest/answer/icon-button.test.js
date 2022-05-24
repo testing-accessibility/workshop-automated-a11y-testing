@@ -11,7 +11,7 @@
  const user = userEvent.setup()
 
  describe('IconButton', () => {
-    xit('labels the dropdown button', () => {
+    xit('labels the button', () => {
         const textFixture = "Send it!"
         const { getByLabelText } = render(<IconButton name={textFixture} />)
  

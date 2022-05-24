@@ -11,13 +11,6 @@ import IconButton from "../icon-button"
 
 const user = userEvent.setup()
 
-describe('IconButton', () =>{
-    it('labels the button', () => {
-        const textFixture = "Send it!"
-        const { getByLabelText } = render(<IconButton name={textFixture} />)
+describe('IconButton', () => {
 
-        const buttonText = getByLabelText(textFixture)
-
-        expect(buttonText).toBeInTheDocument()
-    })
 })
