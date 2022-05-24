@@ -5,8 +5,8 @@ import {Helmet} from "react-helmet"
 import LoadedImageUrl from "./utils/loaded-image-url"
 
 import "components/styles/page-listings.scss"
+import "./styles/icons.scss"
 
-import Icon from "components/icon"
 import ListingsData from "data/listings.json"
 import DatePicker from "components/date-picker/date-picker"
 
@@ -37,7 +37,7 @@ const Listing = props => {
                             <div className="amenity-icons grid">
                             {data.amenities.map((amenity, index) => {
                                 return <div key={index}>
-                                    <Icon name={amenity} showText={true} />
+                                    <span className={`icon-${amenity}`}></span>
                                 </div>
                             })}
                             </div>

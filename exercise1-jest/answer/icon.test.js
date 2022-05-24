@@ -7,7 +7,9 @@
  import '@testing-library/jest-dom'
  import userEvent from '@testing-library/user-event'
  
- import Icon from "../icon"
+ import Icon from "/components/icon"
+ 
+ const user = userEvent.setup()
  
  describe('Icon', () =>{
      it('labels the icon', () => {

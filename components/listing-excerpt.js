@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "@reach/router"
 
-import Icon from "components/icon"
 import "./styles/listing.scss"
+import "./styles/icons.scss"
 
 const ListingExcerpt = ({id, data, image}) => {
     const { listingName = '', location = '', listingType = '', excerpt = '', amenities = [] } = data
@@ -21,7 +21,7 @@ const ListingExcerpt = ({id, data, image}) => {
                     <ul className="amenity-icons">
                         {amenities.map((amenity, index) => {
                             return <li key={index}>
-                                <Icon name={amenity} />
+                                <span className={`icon-${amenity}`}></span>
                             </li>
                         })}
                     </ul>
