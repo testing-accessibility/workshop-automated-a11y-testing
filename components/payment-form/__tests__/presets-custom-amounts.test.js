@@ -11,7 +11,7 @@ import PresetsCustomAmounts from '../presets-custom-amounts'
 const user = userEvent.setup()
  
 describe('Preset amount radio buttons', () => {
-    xit('acts as one tab stop',  async () => {
+    it('acts as one tab stop',  async () => {
         render(
             <form>
                 <PresetsCustomAmounts amounts={[5, 15, 25]} />
@@ -29,7 +29,7 @@ describe('Preset amount radio buttons', () => {
 
         expect(button).toHaveFocus()
     })
-    xit('enables a custom field amount', async () => {
+    it('enables a custom field amount', async () => {
         render(
             <form>
                 <PresetsCustomAmounts amounts={[10, 25, 50]} />
