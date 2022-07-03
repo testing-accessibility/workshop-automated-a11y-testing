@@ -6,7 +6,7 @@
  import '@testing-library/jest-dom'
  import userEvent from '@testing-library/user-event'
   
- import PresetsCustomAmounts from '../presets-custom-amounts'
+ import PresetsCustomAmounts from './presets-custom-amounts'
  
  const user = userEvent.setup()
   
