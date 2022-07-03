@@ -14,43 +14,22 @@ describe('Preset amount radio buttons', () => {
     it('acts as one tab stop',  async () => {
         render(
             <form>
-                <PresetsCustomAmounts amounts={[5, 15, 25]} />
+                <PresetsCustomAmounts amounts={[10, 25, 50]} />
                 <button>Text</button>
             </form>
         )
- 
-        const firstRadio = screen.getByDisplayValue(5)
-        const button = screen.getByRole('button')
-        
-        await user.tab()
-        expect(firstRadio).toHaveFocus()
 
-        await user.tab()
-
-        expect(button).toHaveFocus()
+        // your test code here
     })
-    it('enables a custom field amount', async () => {
+
+    it('enables a custom field amount', () => {
         render(
             <form>
                 <PresetsCustomAmounts amounts={[10, 25, 50]} />
                 <button>Text</button>
             </form>
         )
-            
-        const firstRadio = screen.getByDisplayValue(10)
-        const customRadio = screen.getByDisplayValue('Custom')
-        const customInputText = screen.getByPlaceholderText('$ Other amount')
         
-        await user.tab()
-        expect(firstRadio).toHaveFocus()
-
-        // applying pointer event as arrow keys aren't yet
-        // implemented on radios in user-event
-        customRadio.click()
-        expect(customRadio).toBeChecked()
-
-        await user.tab()
-
-        expect(customInputText).toHaveFocus()
+        // your test code here
     })
  })
