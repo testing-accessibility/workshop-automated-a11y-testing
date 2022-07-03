@@ -14,12 +14,12 @@
      it('acts as one tab stop',  async () => {
          render(
              <form>
-                 <PresetsCustomAmounts amounts={[5, 15, 25]} />
+                 <PresetsCustomAmounts amounts={[10, 25, 50]} />
                  <button>Text</button>
              </form>
          )
   
-         const firstRadio = screen.getByDisplayValue(5)
+         const firstRadio = screen.getByDisplayValue(10)
          const button = screen.getByRole('button')
          
          await user.tab()
