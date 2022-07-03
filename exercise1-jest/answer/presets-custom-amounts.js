@@ -17,7 +17,7 @@ const PresetsCustomAmounts = ({amounts}) => {
                         checked={selectedOption == amount}
                         id={`amt_${amount}`}
                         name="amounts"
-                        onChange={(event) => handleChange(event)}
+                        onChange={handleChange}
                         type="radio"
                         value={amount}
                     />
@@ -29,7 +29,7 @@ const PresetsCustomAmounts = ({amounts}) => {
                     checked={selectedOption === 'Custom'}
                     id="amt_custom"
                     name="amounts"
-                    onChange={(event) => handleChange(event)}
+                    onChange={handleChange}
                     ref={customAmtRadio}
                     type="radio"
                     value="Custom"
