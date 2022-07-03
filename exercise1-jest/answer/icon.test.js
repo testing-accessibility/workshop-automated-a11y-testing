@@ -7,7 +7,7 @@
  import '@testing-library/jest-dom'
  import userEvent from '@testing-library/user-event'
  
- import Icon from "../../components/icon"
+ import Icon from "./icon"
  
  const user = userEvent.setup()
  
