@@ -8,6 +8,8 @@ describe('HomePage', () => {
         cy.get('#header-logo a').should('have.attr', 'aria-current', 'page')
     })
     xit('should have no accessibility violations on load', () => {
-        cy.checkA11y()
+        cy.checkA11y({
+            exclude: ['div#portal-root']
+        })
     })
 })

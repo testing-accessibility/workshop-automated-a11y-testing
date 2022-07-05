@@ -20,7 +20,7 @@ const HomePage = () => {
                 <SearchForm />
                 <div className="wide-layout two-part-overlap">
                     <div className="content-block-wrap">
-                        <img src={imgTents} />
+                        <img src={imgTents} alt="tents"/>
                         <div className="content-block">
                             <h3>Rest and relaxation is a part of life</h3>
                             <div>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</div>
