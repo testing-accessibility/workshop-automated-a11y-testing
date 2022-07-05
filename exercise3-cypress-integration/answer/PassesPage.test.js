@@ -5,7 +5,9 @@ describe('Passes Page', () => {
         cy.injectAxe()
     })
     xit('should have no accessibility violations on load', () => {
-        cy.checkA11y()
+        cy.checkA11y({
+            exclude: ['div#portal-root']
+        })
     })
     xit('should have an accessible payment dialog', () => {
         cy.get('#btn-join-basic').focus().click()
