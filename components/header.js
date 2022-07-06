@@ -6,7 +6,7 @@ import MegaNav from "./meganav/"
 
 const Header = ({inert}) => {
     return (
-        <header id="header" inert={inert}>
+        <div id="header" inert={inert}>
             <div id="header-nav">
                 <div id="header-logo">
                     <a href="/" className="header-main-item">
@@ -21,7 +21,7 @@ const Header = ({inert}) => {
                     <a href="#">Login</a>
                 </div>
             </div>
-        </header>
+        </div>
     )
 }
 

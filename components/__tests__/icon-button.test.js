@@ -11,13 +11,8 @@
  
  const user = userEvent.setup()
  
- xdescribe('IconButton', () =>{
-     xit('labels the button', () => {
-         const textFixture = "Send it!"
-         const { getByLabelText } = render(<IconButton name={textFixture} />)
- 
-         const buttonText = getByLabelText(textFixture)
- 
-         expect(buttonText).toBeInTheDocument()
+describe('IconButton', () =>{
+     it('labels the button', () => {
+
      })
  })
