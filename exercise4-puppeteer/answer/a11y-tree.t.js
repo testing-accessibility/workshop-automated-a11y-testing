@@ -35,7 +35,7 @@ describe('Accessibility Tree', () => {
     })
 
     it(`has the correct axTree`, async () => {
-        const axTree = await page.accessibility.snapshot({ page })
+        const axTree = await page.accessibility.snapshot()
         expect(axTree).toMatchSnapshot()
     })
 })
