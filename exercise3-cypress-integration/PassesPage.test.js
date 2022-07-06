@@ -9,5 +9,4 @@ describe('Passes Page', () => {
             exclude: ['div#portal-root']
         })
     })
-    
 })
