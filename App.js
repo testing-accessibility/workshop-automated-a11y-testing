@@ -42,7 +42,7 @@ export function App() {
 				<TripIdeasPage path="/trip-ideas" />
 			</Router>
 		</div>
-		<footer id="footer" inert={inertMarkupValue ? 'inert' : null}>
+		<div id="footer" inert={inertMarkupValue ? 'inert' : null}>
 			<div className="layout">
 				<div id="footer-logo">
 					<img src={imgFooterLogo} alt="logo" />
