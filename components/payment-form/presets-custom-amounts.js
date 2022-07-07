@@ -6,13 +6,16 @@ const PresetsCustomAmounts = ({amounts}) => {
     const focusInCustomInput = () => {
         customAmtRadio.current.checked = true
     }
+
     return (
         <>
             {amounts.map((amount, index)=> {
                 return <label key={index}>
                     <input
+                        checked={selectedOption == amount}
                         id={`amt_${amount}`}
                         name="amounts"
+                        onChange={(event) => handleChange(event)}
                         type="radio"
                         value={amount}
                     />
@@ -23,7 +26,6 @@ const PresetsCustomAmounts = ({amounts}) => {
                 <input
                     id="amt_custom"
                     name="amounts"
-                    onChange={(event) => handleChange(event)}
                     ref={customAmtRadio}
                     type="radio"
                     value="Custom"
@@ -32,6 +34,7 @@ const PresetsCustomAmounts = ({amounts}) => {
                     id="amt_custom_text"
                     onFocus={focusInCustomInput}
                     placeholder="$ Other amount"
+                    tabIndex={customAmtRadio.current && customAmtRadio.current.checked ? '0' : '-1'}
                     type="text"
                 />
             </label>

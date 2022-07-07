@@ -4,14 +4,18 @@ import {Helmet} from "react-helmet"
 
 import "./styles/page-about.scss"
 import imgAbout from "images/about-image.jpg"
+import HeaderPortal from "../../components/header-portal"
 
 const AboutPage = () => {
     return (
         <BodyClassName className="page-about">
             <>
-                <Helmet>
-                    <title>About Camp Spots</title>
-                </Helmet>
+                <HeaderPortal>
+                    <h1>About CampSpots</h1>
+                    <Helmet>
+                        <title>About Camp Spots</title>
+                    </Helmet>
+                </HeaderPortal>
                 <div className="layout two-parts-50-50">
                     <div className="content-block">
                         <h2>About CampSpots</h2>

@@ -9,7 +9,7 @@ import userEvent from '@testing-library/user-event'
 import SubNavButton  from '../subnav-button'
 
 describe('SubNavButton', () => {
-    it('labels the dropdown button', () => {
+    xit('labels the dropdown button', () => {
         const textFixture = "Hamburgers"
         const { getByText } = render(<SubNavButton buttonName={textFixture} onClick={()=>{console.log('do stuff')}} />)
 

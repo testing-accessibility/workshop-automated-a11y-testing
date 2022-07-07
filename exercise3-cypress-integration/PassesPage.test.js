@@ -5,7 +5,8 @@ describe('Passes Page', () => {
         cy.injectAxe()
     })
     it('should have no accessibility violations on load', () => {
-        cy.checkA11y()
+        cy.checkA11y({
+            exclude: ['div#portal-root']
+        })
     })
-    
 })

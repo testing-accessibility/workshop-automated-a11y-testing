@@ -6,20 +6,20 @@
  import '@testing-library/jest-dom'
  import userEvent from '@testing-library/user-event'
   
- import PresetsCustomAmounts from '../presets-custom-amounts'
+ import PresetsCustomAmounts from './presets-custom-amounts'
  
  const user = userEvent.setup()
   
- describe('Preset amount radio buttons', () => {
+ fdescribe('Preset amount radio buttons', () => {
      it('acts as one tab stop',  async () => {
          render(
              <form>
-                 <PresetsCustomAmounts amounts={[5, 15, 25]} />
+                 <PresetsCustomAmounts amounts={[10, 25, 50]} />
                  <button>Text</button>
              </form>
          )
   
-         const firstRadio = screen.getByDisplayValue(5)
+         const firstRadio = screen.getByDisplayValue(10)
          const button = screen.getByRole('button')
          
          await user.tab()
