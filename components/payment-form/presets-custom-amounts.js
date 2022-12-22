@@ -1,18 +1,23 @@
 import React, {useRef, useState} from "react"
 
 const PresetsCustomAmounts = ({amounts}) => {
+  const [selectedOption, setSelectedOption] = useState(false)
     const customAmtRadio = useRef(null)
-    
+
     const focusInCustomInput = () => {
         customAmtRadio.current.checked = true
     }
-
+    const handleChange = (event) => {
+      if (event.target.checked) {
+        setSelectedOption(event.target.value);
+      }
+    }
     return (
         <>
-            {amounts.map((amount, index)=> {
+            {amounts.map((amount, index) => {
                 return <label key={index}>
                     <input
-                        checked={selectedOption == amount}
+                        checked={selectedOption === amount}
                         id={`amt_${amount}`}
                         name="amounts"
                         onChange={(event) => handleChange(event)}
@@ -24,8 +29,10 @@ const PresetsCustomAmounts = ({amounts}) => {
             })}
             <label className="custom-radio-group">
                 <input
+                    checked={selectedOption === 'Custom'}
                     id="amt_custom"
                     name="amounts"
+                    onChange={(event) => handleChange(event)}
                     ref={customAmtRadio}
                     type="radio"
                     value="Custom"
