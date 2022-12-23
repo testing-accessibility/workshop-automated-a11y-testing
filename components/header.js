@@ -11,7 +11,7 @@ const Header = ({inert}) => {
                 <div id="header-logo">
                     <a href="/" className="header-main-item">
                         <span className="logo-img">
-                            <img src={CampSpotsLogo} alt=""/>
+                            <img src={CampSpotsLogo} />
                         </span>
                         <span className="logo-text">CampSpots</span>
                     </a>
