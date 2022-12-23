@@ -7,10 +7,4 @@ describe('HomePage', () => {
     it('should have a Header', () => {
         cy.get('#header').contains('CampSpots')
     })
-
-    it('should have no accessibility violations', () => {
-        cy.checkA11y({
-            exclude: ['div#portal-root']
-        })
-    })
 })
